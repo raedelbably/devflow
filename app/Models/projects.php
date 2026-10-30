@@ -17,7 +17,7 @@ class projects extends Model
     protected $fillable = ["title" , "author" , 'body'];
     protected $guarded = ['id'];
     function tags(){
-    return  $this->belongsToMany(tag::class , "tag_id");
+    return  $this->belongsToMany(tag::class);
     }
     //
 }

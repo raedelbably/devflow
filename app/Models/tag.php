@@ -18,6 +18,6 @@ class tag extends Model
     protected $fillable = ['name'];
     protected $guarded = ['id'];
     function projects(){
-    return  $this->belongsToMany(projects::class, 'projects_id');
+    return  $this->belongsToMany(projects::class);
     }
 }
